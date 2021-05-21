@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+ font-family: Calibri, Helvetica, sans-serif;
+ background-color: yellow;
+}
+html {
+ font-size: 18px;
+ }
+.container {
+ padding: 50px;
+ width: 85%;
+ max-width: 768px;
+ margin: 0 auto;
+ padding: 1rem;
+ background-color: white;
+ box-shadow: 0 0 5px 2px #dedede;
+ border-radius: 7px;
+}
+
+input[type=text], textarea {
+ width: 95%;
+ padding: 15px;
+ margin: 5px 0 22px 0;
+ display: inline-block;
+ border: none;
+ background: #f1f1f1;
+}
+input[type=text]:focus {
+ background-color: orange;
+ outline: none;
+}
+div {
+ padding: 10px 0;
+ }
+input[type=text]:hover {
+ padding: 10px 0;
+ opacity: 1;
+ background-color: purple;
+ color: #fff;
+ }
+hr {
+ border: 3px solid blue; 
+ margin-bottom: 25px;
+}
+.submitbtn {
+ background-color: green;
+ color: white;
+ padding: 16px 20px;
+ margin: 8px 0;
+ border: none;
+ cursor: pointer;
+ width: 100%;
+ opacity: 0.9;
+}
+.submitbtn:hover {
+ opacity: 1;
+ background-color: #232323;
+ color: #fff;
+}
+</style>
+</head>
+<body>
+<form>
+ <div class="container">
+ <center> <h1> Manipal University Jaipur</h1> </center>
+ <center> <h3> Student Personal Details</h3> </center>
+ <hr> 
+<label> Name : </label>
+<input type="text" name="name" placeholder= "Name" size="15" required />
+<label> Registration Number :</label>
+<input type="text" name="regno" placeholder="Registration Number"
+size="15" required />
+<label> Date of Birth : </label>
+<input type="date" name="lastname" placeholder="" size="15"required />
+<p></p>
+<div>
+<label>
+Gender :
+</label><br>
+<input type="radio" value="Male" name="gender" checked > Male
+<input type="radio" value="Female" name="gender"> Female
+<input type="radio" value="Other" name="gender"> Other
+<p></p>
+</div>
+<label>
+Mobile Number :
+</label>
+<input type="text" name="phone" placeholder="+91" size="15"/ required>
+Address :
+<input type="text" name="address" placeholder="Address" size="50"/> 
+<label>
+Primary Email :
+</label>
+<input type="text" name="email1" placeholder="Enter Email" size="10"/
+required>
+<label>
+Secondary Email :
+</label>
+<input type="text" name="email2" placeholder="Enter Email" size="10"/
+required>
+ <center> <h3> Student Academic Details</h3> </center>
+ <hr>
+ <div>
+<label>
+Domain :
+</label><br>
+<input type="checkbox" value="IT name=" domain" checked > IT
+<input type="checkbox" value="CSE" name="domain"> CSE
+<input type="checkbox" value="CCE" name="domain"> CCE
+</div>
+<p></p>
+<label> Class 10th GPA</label> 
+<input type="text" name="gpa10" placeholder= "10th Percentile" size="13"
+required />
+<label> Class 12th GPA</label>
+<input type="text" name="gpa12" placeholder= "12th Percentile" size="15"
+required />
+<label> B.Tech GPA</label>
+<input type="text" name="gpabtech" placeholder= "B.Tech Percentile"
+size="15" required />
+<label> Active Backlogs (if any)</label>
+<input type="text" name="backlog" placeholder= "Number of active backlogs"
+size="15" required />
+ <button type="submit" class="submitbtn">Submit</button>
+</form>
+</body>
+</html>
